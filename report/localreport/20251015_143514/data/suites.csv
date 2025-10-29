@@ -1,0 +1,13 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"
+参数化登录用例
+","176","登录数据测试","cases","2025-10-15","passed","2025-10-15","","test_login","",""
+"
+参数化登录用例
+","189","登录数据测试","cases","2025-10-15","passed","2025-10-15","","test_login","",""
+"
+查询活动
+","0","test_geteven01","cases","2025-10-15","broken","2025-10-15","","test_getteventlist","",""
+"
+预定活动
+","0","test_order01","cases","2025-10-15","broken","2025-10-15","","test_order","",""

@@ -1,0 +1,25 @@
+# pytest API测试项目依赖包 - 最新版本
+# 测试框架
+pytest>=8.0.0
+
+# HTTP请求库
+requests>=2.31.0
+
+# JSON路径解析
+jsonpath>=0.82.0
+
+# 测试报告生成
+allure-pytest>=2.13.0
+
+# 数据库连接
+pymysql>=1.1.0
+
+# Excel文件处理
+xToolkit>=0.0.89
+
+# 钉钉机器人通知
+dingtalkchatbot>=1.5.0
+
+# 其他可能需要的包
+# 如果需要运行allure报告，还需要安装allure命令行工具
+# allure-commandline (需要单独下载安装)
