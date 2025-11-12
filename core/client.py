@@ -130,7 +130,7 @@ class Client(object):
     @allure.step
     # 断言响应时间小于多少
     def check_res_time_less_than(self, times):
-        assert self.res_times < times, f'响应状态码不为200.实际结果【{self.res_times}】,预期结果：小于【{times}】'
+        assert self.res_times < times, f'响应超时.实际结果【{self.res_times}】,预期结果：小于【{times}】'
     @allure.step
     # 响应内容全等断言
     def check_res_equal(self, b):

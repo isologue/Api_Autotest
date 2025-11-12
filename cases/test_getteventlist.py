@@ -7,7 +7,7 @@ from util.util import *
 
 @allure.feature('查询项目接口测试') # 模块
 @allure.title('查询项目测试') # 每个用例的标题
-@pytest.mark.run(order=2) # 用例运行顺序，越小越先运行（报告中无体现）
+@pytest.mark.order(2) # 用例运行顺序，越小越先运行（报告中无体现）
 @paramdata('case_info',get_excel_apitestcase('查询')) # util里改名了paramdata
 def test_login(api,global_set,case_info):
     '''

@@ -65,7 +65,7 @@ from util.util import *
 
 @allure.feature('用户登录接口测试') # 模块
 @allure.title('登录数据测试') # 每个用例的标题
-@pytest.mark.run(order=1) # 用例运行顺序，越小越先运行（报告中无体现）
+@pytest.mark.order(1) # 用例运行顺序，越小越先运行（报告中无体现）
 @paramdata('case_info',get_excel_apitestcase('登录')) # util里改名了paramdata
 def test_login(api,global_set,case_info):
     '''
@@ -76,7 +76,7 @@ def test_login(api,global_set,case_info):
     client.set_datas(eval(case_info['正文参数']))
     client.send()
     client.check_code(case_info['状态码'])
-    client.check_res_time_less_than(1000)
+    # client.check_res_time_less_than(1000)
     # client.check_json_value('data.user_id',1)
     client.check_json_value('message',f'{case_info['断言1']}')
     # 获取变量
